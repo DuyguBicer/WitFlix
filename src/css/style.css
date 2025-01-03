@@ -1,0 +1,156 @@
+/** {
+    border: 1px solid black;
+}*/
+header {
+    height: 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 5vw;
+}
+
+header nav {
+    display: flex;
+    gap: 4vw;
+}
+
+header nav a {
+    font-size: 1.2rem;
+
+}
+
+.right-side {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.search {
+    position: relative;
+
+}
+
+.search i {
+    position: absolute;
+    right: 3px;
+    top: 7px;
+}
+
+.hero-content {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url("../images/açclik-oyunları.jpg"), url("../images/aclik-oyunlari-yedek.jpg");
+    background-position: center;
+    height: 500px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 3rem;
+    justify-content: center;
+    font-size: 1.1rem;
+
+}
+
+.movie-info {
+    font-size: 100%;
+    width: 50%;
+}
+
+ul.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.movie-facets {
+    display: flex;
+    gap: 15px;
+    color: #b2a9a9;
+    margin-top: 10px;
+}
+
+.btn-lg:hover {
+    background-color: #8a8888;
+    border: 1px solid #8a8888;
+    cursor: pointer;
+}
+
+.user-ratings {
+    display: flex;
+    gap: 15px;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 2px;
+    border: 1px dashed #494949;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 35px;
+    object-fit: contain;
+}
+
+section {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.movie-details li a {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 5%;
+
+}
+
+.movie-details li a:hover {
+    background-color: #8a8888;
+
+}
+
+.btn-lg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #cf1111;
+    width: max-content;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 10%;
+    background-color: #ff0303;
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+.movie-info p {
+    margin-top: 5%;
+}
+
+.populer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.suggestion-row {
+    display: flex;
+    flex-direction: column;
+
+}
+.suggestion-title h2 {
+    display: flex;
+}
