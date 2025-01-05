@@ -257,16 +257,45 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 1.5rem;
-    font-size: 14px
+    font-size: 0.8rem;
 }
 
 .footer-helps {
     width: 68%;
     padding-right: 1rem;
 }
-.helps-nav {
+.footer-helps nav {
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 5rem;
+    margin-bottom: 1rem; 
+}
 
+.footer-helps nav a {
+    text-decoration: none;
+    color: #000
+}
+.footer-socials,
+.apps {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-socials p,
+.apps p {
+    margin-bottom: 1rem;
+}
+
+
+.social-icons,
+.apps-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}  
+
+.social-icons img, 
+.apps-icons img {
+    height: 36px;
 }
