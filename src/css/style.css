@@ -1,11 +1,18 @@
 /** {
     border: 1px solid black;
 }*/
+#wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+}
 header {
     height: 5vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 1.5rem;
 }
 
 .logo {
@@ -43,6 +50,7 @@ header nav a {
 .hero-content {
     background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url("../images/açclik-oyunları.jpg"), url("../images/aclik-oyunlari-yedek.jpg");
     background-position: center;
+    background-size: cover;
     height: 500px;
     color: #ffffff;
     display: flex;
@@ -125,32 +133,140 @@ section {
 .btn-lg {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     border: 1px solid #cf1111;
     width: max-content;
-    padding: 15px;
-    border-radius: 5px;
-    margin-left: 10%;
+    padding: 1rem;
+    border-radius: 1rem;      
+    margin-left: 5rem;
     background-color: #ff0303;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.2rem;
 
 }
 
 .movie-info p {
     margin-top: 5%;
 }
+.suggestion-row {
+    font-size: 1rem;
 
-.populer {
-    display: flex;
-    justify-content: space-around;
+
 }
 
-.suggestion-row {
+.s-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    
+}
+.s-header a {
+    text-decoration: none;
+}
+.suggestion-content,.suggestion-content-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+
+.suggestion-content .item, .suggestion-content-2 .item {
     display: flex;
     flex-direction: column;
+    border: 1px solid #000000;
+    row-gap: 1rem;
+    padding: 1rem 4rem 1rem 1rem;
+    width: 24%;
+    background-color: #c0cadd;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;  
+}
+.detail {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: #d8dcde
+}
+.detail .marutiry-rating {
+    border: 1px solid #b2a9a9;
+    border-radius: 5px;
+    padding: 1px;
+}
+.btn-md {
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    border: 1px solid #cf1111;
+    width: max-content;
+    padding: 0.5rem;
+    border-radius: 1rem;      
+    background-color: #ff0303;
+    color: #ffffff;
+    font-size: 0.65rem;
+}
+.btn-md:hover {
+    background-color: #8a8888;
+    border: 1px solid #8a8888;
+    cursor: pointer;
+}
+
+
+.suggestion-content .item:nth-child(1) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/extraction.jpg);
+    
+}
+.suggestion-content .item:nth-child(2) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/THEOLDGUARD.jpg);
+   
+}
+.suggestion-content .item:nth-child(3) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/annihilation-kapak.jpg);
+   
+}
+.suggestion-content .item:nth-child(4) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/Predator.jpg);
 
 }
-.suggestion-title h2 {
+
+.suggestion-content-2 .item:nth-child(1) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/Damsel.jpeg);
+    
+}
+.suggestion-content-2 .item:nth-child(2) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/THE-MAG.jpeg);
+    
+}
+.suggestion-content-2 .item:nth-child(3) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/REAL-STEEL.jpg);
+   
+}
+.suggestion-content-2 .item:nth-child(4) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/BADLAND-HUNTERS.jpeg);
+   
+}
+
+
+footer {
+    height: 10rem;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+    font-size: 14px
+}
+
+.footer-helps {
+    width: 68%;
+    padding-right: 1rem;
+}
+.helps-nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
