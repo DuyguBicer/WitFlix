@@ -2,7 +2,7 @@
     border: 1px solid black;
 }*/
 body {
-    background-color: #a39575f9
+    background-color: #d3d1cbf9
 }
 #wrap {
     max-width: 1200px;
@@ -11,8 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    padding: 0 1rem 0 1rem;
-    background-color: #ceb488;
+    padding: 0 1rem;
+    background-color: #ddd9d1;
 }
 
 header {
@@ -34,19 +34,16 @@ header nav {
 
 header nav a {
     font-size: 1.2rem;
-
 }
 
 header .right-side {
     display: flex;
     gap: 20px;
     align-items: center;
-
 }
 
 header .search {
     position: relative;
-    /*margin-right: 3rem;*/
 }
 
 header .search i {
@@ -54,54 +51,6 @@ header .search i {
     right: 3px;
     top: 7px;
 }
-
-main {
-    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url("../images/açclik-oyunları.jpg"), url("../images/aclik-oyunlari-yedek.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 5rem 3rem;
-    color: #ffffff;
-
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-
-}
-
-.movie-info {
-    font-size: 100%;
-    width: 50%;
-}
-
-ul.movie-details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-.movie-facets {
-    display: flex;
-    gap: 15px;
-    color: #b2a9a9;
-    margin-top: 10px;
-}
-
-.btn-lg:hover {
-    background-color: #8a8888;
-    border: 1px solid #8a8888;
-    cursor: pointer;
-}
-
-.user-ratings {
-    display: flex;
-    gap: 15px;
-}
-
 .profile {
     width: 40px;
     height: 40px;
@@ -119,11 +68,47 @@ ul.movie-details {
     object-fit: contain;
 }
 
-section {
+main {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url("../images/açclik-oyunları.jpg"), url("../images/aclik-oyunlari-yedek.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 3rem;
+    color: #ffffff;
+}
+
+.hero-content {
     display: flex;
-    gap: 20px;
     flex-direction: column;
-    margin-top: 15px;
+    row-gap: 2rem;
+}
+
+.movie-info {
+    font-size: 100%;
+    width: 50%;
+}
+
+.movie-info p {
+    margin-top: 5%;
+}
+
+.movie-facets {
+    display: flex;
+    gap: 15px;
+    color: #b2a9a9;
+    margin-top: 10px;
+}
+
+.user-ratings {
+    display: flex;
+    gap: 15px;
+}
+
+ul.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
 
 .movie-details li a {
@@ -132,12 +117,16 @@ section {
     padding: 3px;
     text-decoration: none;
     border-radius: 5%;
-
 }
 
 .movie-details li a:hover {
     background-color: #8a8888;
+}
 
+.btn:hover {
+    background-color: #8a8888;
+    border: 1px solid #8a8888;
+    cursor: pointer;
 }
 
 .btn-lg {
@@ -152,24 +141,23 @@ section {
     background-color: #ff0303;
     color: #ffffff;
     font-size: 1.2rem;
-
 }
 
-.movie-info p {
-    margin-top: 5%;
+section {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 15px;
 }
 
 .suggestion-row {
     font-size: 1rem;
-
-
 }
 
 .s-header {
     display: flex;
     justify-content: space-between;
     font-size: 0.7rem;
-
 }
 
 .s-header a {
@@ -183,6 +171,29 @@ section {
     margin-bottom: 3rem;
 }
 
+.suggestion-content .item:nth-child(1) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/extraction.jpg);
+}
+
+.suggestion-content .item:nth-child(2) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/annihilation-kapak.jpg);
+}
+
+.suggestion-content .item:nth-child(3) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/Predator.jpg);
+}
+
+.suggestion-content-2 .item:nth-child(1) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/Damsel.jpeg);
+}
+
+.suggestion-content-2 .item:nth-child(2) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/THE-MAG.jpeg);
+}
+
+.suggestion-content-2 .item:nth-child(3) {
+    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/THEOLDGUARD.jpg);
+}
 
 .suggestion-content .item,
 .suggestion-content-2 .item {
@@ -226,42 +237,6 @@ section {
     background-color: #ff0303;
     color: #ffffff;
     font-size: 0.65rem;
-}
-
-.btn-md:hover {
-    background-color: #8a8888;
-    border: 1px solid #8a8888;
-    cursor: pointer;
-}
-
-
-.suggestion-content .item:nth-child(1) {
-    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/extraction.jpg);
-
-}
-
-.suggestion-content .item:nth-child(2) {
-    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/annihilation-kapak.jpg);
-
-}
-
-.suggestion-content .item:nth-child(3) {
-    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/Predator.jpg);
-
-}
-
-.suggestion-content-2 .item:nth-child(1) {
-    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/Damsel.jpeg);
-
-}
-
-.suggestion-content-2 .item:nth-child(2) {
-    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/THE-MAG.jpeg);
-
-}
-
-.suggestion-content-2 .item:nth-child(3) {
-    background-image: linear-gradient(rgb(0 0 0 / 15%), rgba(0, 0, 0, 0.5)), url(../images/THEOLDGUARD.jpg);
 }
 
 footer {
@@ -327,7 +302,21 @@ footer {
         left: 25%;
         margin-top: 3%;
     }
+    .hero-content {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 90%;
+    }
 
+    .movie-info,
+    .movie-details {
+        width: 100%;
+
+    }
+
+    .btn-lg {
+        font-size: 90%;
+    }
     section {
         padding: 1rem;
     }
@@ -357,19 +346,4 @@ footer {
         display: flex;
     }
 
-    .hero-content {
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 90%;
-    }
-
-    .movie-info,
-    .movie-details {
-        width: 100%;
-
-    }
-
-    .btn-lg {
-        font-size: 90%;
-    }
 }
